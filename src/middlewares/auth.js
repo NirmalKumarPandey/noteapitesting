@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 const { model } = require("mongoose");
-const SECRET_KEY = process.env.SECRET_KEY;
+const SECRET_KEY = "NOTES_API";
 const auth = (req, res, next) => {
     try {
         let token = req.headers.authorization;
